@@ -1,0 +1,52 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background: url('bg.png') center/cover no-repeat;
+    display: flex; /* Enable flexbox */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    flex-direction: column; /* Stack elements vertically */
+    position: relative;
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* 30% transparency */
+    z-index: -1; /* Send to the back */
+}
+
+.logo {
+    width: 120px; /* Adjusted for smaller screens */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.social-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.social-buttons a {
+    text-decoration: none;
+}
+
+.social-icon {
+    width: 50px; /* Size of the icons */
+    height: 50px;
+    border-radius: 50%;
+    transition: transform 0.3s ease; /* Add animation effect */
+}
+
+
+.social-icon:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
